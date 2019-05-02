@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convert Me</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <link rel="stylesheet" href="styles/helpers.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/grupy.css">
+
+</head>
+  <body>
+    <div class="level">
+    </div>
+    <div class="level">
+      <div id="outputSred" class="control is-expanded">
+          Title and Author: <output class="output" type="text" name="DATA_TITLE_AUTHOR" id="DATA_TITLE_AUTHOR">
+        </div>
+    </div>
+    <div class="level">
+    </div>
+    <div class="level">
+      <div id="outputSred" class="control is-expanded">
+          Read: <output class="output" type="text" name="GET_PROGRESSION" id="CALCULATE_PROGRESSION">
+        </div>
+    </div>
+    <div class="level">
+    </div>
+    <div class="level">
+      <div id="outputSred" class="control is-expanded">
+          Last read on: <output class="output" type="text" name="GET_LAST_READ_DATE" id="GET_LAST_READ_DATE">
+        </div>
+    </div>
+    <div class="level">
+    </div>
+    <div class="level">
+      <div id="outputSred" class="control is-expanded">
+          Current pace: <output class="output" type="text" name="GET_HOURLY_PACE" id="GET_HOURLY_PACE">
+        </div>
+    </div>
+    <div class="level">
+    </div>
+    <div class="level">
+      <div id="outputSred" class="control is-expanded">
+          Estimated time to read in: <output class="output" type="text" name="outname" id="outname">
+        </div>
+    </div>
+    <div class="level">
+    </div>
+    <div class="level">
+      <p class="control is-expanded">
+        I read <input class="input" type="text" name="SESSION_PAGES" id="SESSION_PAGES" size="3" placeholder="Input a number of pages read"> pages in <input class="input" type="text" name="SESSION_MINUTES" id="SESSION_MINUTES" size="2" placeholder="Input a number to convert to"> minutes.
+
+      </p>
+      <a onclick="calculateRows" class="button is-primary is-large">
+            CHECK IN
+          </a>
+
+    </div>
+
+
+
+
+
+    <h1>Hello World!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script type="text/javascript" src="bulma.js"></script>
+  </body>
+</html>
